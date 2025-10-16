@@ -1,108 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Input Form</title>
-  <style>
-    body {
-      font-family: "Poppins", sans-serif;
-      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    form {
-      background: #fff;
-      padding: 30px 40px;
-      border-radius: 15px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-      width: 400px;
-    }
-
-    h2 {
-      text-align: center;
-      color: #333;
-      margin-bottom: 20px;
-    }
-
-    label {
-      display: block;
-      margin-top: 12px;
-      font-weight: 600;
-      color: #444;
-    }
-
-    input[type="text"],
-    input[type="url"],
-    input[type="color"],
-    input[type="range"] {
-      width: 100%;
-      padding: 10px;
-      margin-top: 6px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      outline: none;
-      font-size: 14px;
-      transition: 0.3s;
-    }
-
-    input[type="text"]:focus,
-    input[type="url"]:focus,
-    input[type="color"]:focus,
-    input[type="range"]:focus {
-      border-color: #0078ff;
-      box-shadow: 0 0 5px rgba(0, 120, 255, 0.3);
-    }
-
-    .range-value {
-      text-align: right;
-      font-size: 14px;
-      margin-top: 2px;
-      color: #555;
-    }
-
-    button[type="submit"] {
-      width: 100%;
-      background: #0078ff;
-      color: white;
-      border: none;
-      padding: 12px;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      margin-top: 20px;
-      transition: 0.3s;
-    }
-
-    button[type="submit"]:hover {
-      background: #005fcc;
-    }
-  </style>
+	<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-
-  <form action="#" method="post">
-    <h2>User Input Form</h2>
-
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" minlength="3" maxlength="50" required>
-
-    <label for="portfolio">Portfolio</label>
-    <input type="url" id="portfolio" name="portfolio" required>
-
-    <label for="favColor">Favorite Color</label>
-    <input type="color" id="favColor" name="favColor">
-
-    <label for="likeness">Likeness</label>
-    <input type="range" id="likeness" name="likeness" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
-    <output class="range-value">50</output>
-
-    <button type="submit">Submit</button>
-  </form>
+	<!-- the entire body must be written by student -->
+	<form method="post">
+		<lable for="name">Name:</lable>
+		<input type="text" id="name" minlength="3" maxlength="50" required>
+		<br><br>
+		<lable for="portfolio">Portfolio:</lable>
+		<input type="url" id="portfolio" required>
+		<br><br>
+		<lable for="favColor">Favorite Color</lable>
+		<input type="color" id="favColor">
+		<br><br>
+		<lable for="likeness">Likeness</lable>
+		<input type="range" id="likeness" min="1" max="100" required>	
+		
+	</form>
+    <script type="text/javascript" src="./script.js">
+</script>
 
 </body>
+
 </html>
