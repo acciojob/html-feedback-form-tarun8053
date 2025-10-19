@@ -1,30 +1,28 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<form method="post">
-		<lable for="name">Name:</lable>
-		<input type="text" id="name" minlength="3" maxlength="50" required>
-		<br><br>
-		<lable for="portfolio">Portfolio:</lable>
-		<input type="url" id="portfolio" required>
-		<br><br>
-		<lable for="favColor">Favorite Color</lable>
-		<input type="color" id="favColor" required>
-		<br><br>
-		<lable for="likeness">Likeness</lable>
-		<input type="range" id="likeness" min="1" max="100" required>	
-		
-	</form>
-    <script type="text/javascript" src="./script.js">
-</script>
+  <h1>Feedback Form</h1>
 
+  <form method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" minlength="3" maxlength="50" required>
+    <br><br>
+
+    <label for="portfolio">Portfolio:</label>
+    <input type="url" id="portfolio" required>
+    <br><br>
+
+    <label for="favColor">Favorite Color:</label>
+    <input type="color" id="favColor" required>
+    <br><br>
+
+    <label for="likeness">Likeness:</label>
+    <input type="range" id="likeness" min="1" max="100" required>
+  </form>
+
+  <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
